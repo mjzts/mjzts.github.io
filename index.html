@@ -1,1 +1,171 @@
-git init
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0097A7">
+    <title>侦探社 -- 你想搜的这里都有！</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.4.1/css/mdui.min.css">
+    <script src="//cdn.bootcss.com/mdui/0.4.1/js/mdui.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118982945-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118982945-2');
+    </script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-drawer-body-left">
+<div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-cyan-700">
+        <a href="#" class="mdui-btn mdui-btn-icon" id="toggle"><i class="mdui-icon material-icons">menu</i></a>
+        <a href="javascript:location.reload();" class="mdui-typo-headline">侦探社</a>
+        <a href="javascript:location.reload();" class="mdui-typo-title">你想搜的这里都有</a>
+        <div class="mdui-toolbar-spacer"></div>
+                <a href="https://zts.cqtui.com/" target="_blank" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+<!--                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>-->
+    </div>
+</div>
+<div class="mdui-drawer mdui-color-blue-grey-50" id="drawer">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+        <a href="https://zts.cqtui.com" target="mainiframe">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-teal">home</i>
+                <div class="mdui-list-item-content">美剧侦探社</div>
+            </li>
+        </a>
+        <li class="mdui-collapse-item mdui-collapse-item-open">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">explore</i>
+                <div class="mdui-list-item-content">综合搜索</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a href="http://www.cilimao.me" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">磁力猫</div>
+                    </li>
+                </a>
+                <a href="https://www.cupfox.com" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">茶杯狐</div>
+                    </li>
+                </a>
+                <a href="https://www.ziyuanmao.com" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">资源猫</div>
+                    </li>
+                </a>
+                <a href="https://www.xiaoso.net" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">小不点</div>
+                    </li>
+                </a>
+                <a href="http://yizhansou.com" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">一站搜</div>
+                    </li>
+                </a>
+                <a href="https://neets.cc" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">Neets搜</div>
+                    </li>
+                </a>
+            </ul>
+        </li>
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">cloud_queue</i>
+                <div class="mdui-list-item-content">网盘搜索</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a href="pan.html" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        百度网盘搜索
+                    </li>
+                </a>
+                <a href="https://www.panc.cc" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">胖次</div>
+                    </li>
+                </a>
+                <a href="http://www.slimego.cn" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">史莱姆搜索</div>
+                    </li>
+                </a>
+                <a href="https://www.xilinjie.com/" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">西林街</div>
+                    </li>
+                </a>
+                <a href="http://www.wwaaffxx.com" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">我爱分享</div>
+                    </li>
+                </a>
+            </ul>
+        </li>
+
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">face</i>
+                <div class="mdui-list-item-content">动漫搜索</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a href="https://www.acgsou.com" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">ACG 搜索</div>
+                    </li>
+                </a>
+                <a href="https://nyaso.com" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">喵搜动漫</div>
+                    </li>
+                </a>
+            </ul>
+        </li>
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-brown">font_download</i>
+                <div class="mdui-list-item-content">字幕搜索</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a href="https://assrt.net" target="mainiframe">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">射手网(伪)</div>
+                    </li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="mdui-container-full" style="margin-top: 0px">
+    <iframe name="mainiframe" src="mjzts.html" id="mainiframe" marginwidth="0" marginheight="0" allowtransparency="true" onload="resizeFrameHeight()" frameborder="0" width="100%"></iframe>
+</div>
+<script>
+    var inst = new mdui.Drawer('#drawer');
+    document.getElementById('toggle').addEventListener('click', function () {
+        inst.toggle();
+    });
+</script>
+<script type="text/javascript">
+    function resizeFrameHeight() {
+        var ifm = document.getElementById("mainiframe");
+        ifm.height = document.documentElement.clientHeight - 68;
+    }
+    window.onresize=function() {
+        resizeFrameHeight();
+    }
+</script>
+</body>
+</html>

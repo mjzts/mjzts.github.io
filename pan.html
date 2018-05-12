@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="网盘搜索,百度网盘搜索,网盘搜索大全">
+    <link rel="icon" href="/favicon.ico">
+    <title>网盘搜索</title>
+    <style type="text/css">
+        body{text-align:center;height:100%;background-color:#fff;}
+        .logo{width:275px;height:71px;margin:9% auto 30px}
+        input[type=submit],input[type=button]{display:inline-block;color:#fff;background-color:#39b29d;border-radius:2px;height:40px;line-height:27px;font-family:Arial,Microsoft YaHei;font-size:16px;padding:0 20px;border:none;cursor:pointer;letter-spacing:8px}
+        input[type=text]{float:left;width:500px;height:32px;padding:3px 10px;margin-bottom:30px;border:1px solid #cdcdcd;font-size:16px;outline: 0;}
+        #weibo-search{display:block;width:618px;margin:0 auto}
+        section img{width: 300px;height: 250px;border: none;}
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118982945-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118982945-2');
+    </script>
+</head>
+<body>
+<img class="logo" title="网盘搜索" src="https://wx4.sinaimg.cn/large/b1601727ly1fm74ibkzp0j20fb03y74l.jpg">
+<section class="search" id="weibo-search">
+    <div class="middle" id="tijiao">
+        <input name="" type="text" id="search" placeholder="搜你想要的">
+        <input type="submit" value="搜索" onclick="search()">
+        <script type="text/javascript">
+            function search() {
+                var s = document.getElementById('search').value;
+                window.open("http://www.56wangpan.com/search/kw" + s, "_self");
+            }
+        </script>
+    </div>
+    </section>
+<script type="text/javascript">
+    document.getElementById('tijiao').onkeydown=keyDownSearch;
+    function keyDownSearch(e) {
+        var theEvent = e || window.event;
+        var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if (code == 13) {
+            search();
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

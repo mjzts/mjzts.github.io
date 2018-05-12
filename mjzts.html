@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0097A7">
+    <title>侦探社 -- 你想搜的这里都有！</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.4.1/css/mdui.min.css">
+    <script src="//cdn.bootcss.com/mdui/0.4.1/js/mdui.min.js"></script>
+    <link rel="stylesheet" href="/mdui/mdui.min.css">
+    <script src="/mdui/mdui.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118982945-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118982945-2');
+    </script>
+</head>
+<body>
+<div class="mdui-container">
+    <div class="mdui-text-center" style="margin-top: 50px">
+        <h1>美剧侦探社的小伙伴们</h1>
+        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-cyan-700"  onclick="javascript:join();">
+            惊喜入口
+            <i class="mdui-icon material-icons">&#xe5c8;</i>
+        </button>
+    </div>
+    <div class="mdui-row mdui-text-center" style="margin-top: 30px; margin-bottom: 20px">
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-hoverable" style="padding: 10px">
+                <img src="/img/mjzts/wechatqr.jpg" height="200px" width="200px">
+                <h3>美剧侦探社 公众号二维码</h3>
+            </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-hoverable" style="padding: 10px">
+                <img src="/img/mjzts/miniqr.jpg" height="200px" width="200px">
+                <h3>美剧侦探社 小程序二维码</h3>
+            </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-hoverable" style="padding: 10px">
+                <img src="/img/mjzts/weiboqr.png" height="200px" width="200px">
+                <h3>美剧侦探社 微博二维码</h3>
+            </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-hoverable" style="padding: 10px">
+                <img src="/img/mjzts/wxgroupqr.png" height="200px" width="200px">
+                <h3>美剧侦探社 微信群二维码</h3>
+            </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-hoverable" style="padding: 10px">
+                <img src="/img/mjzts/qqgroupqr.png" height="200px" width="200px">
+                <h3>美剧侦探社 QQ群二维码</h3>
+            </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-hoverable" style="padding: 10px">
+                <img src="/img/mjzts/tggroup.png" height="190px" width="190px">
+                <h3>美剧侦探社 telegram群 <span class="mdui-typo"><a href="https://t.me/MJZTS520" target="_blank">点击加入</a></span></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+    function join(){
+        viewurl = 'https://zts.cqtui.com/pc/invcode/free';
+        mdui.dialog({
+            title: '怎么加入美剧侦探社？',
+            content: '<iframe width="100%" height="500px" frameborder="0" scrolling="no" src='+viewurl+'></iframe>',
+            buttons: [
+                {
+                    text: '关闭',
+                    close: true
+                }
+            ],
+            modal: true
+        });
+    }
+</script>
+</body>
+</html>
